@@ -1,0 +1,205 @@
+          /*   Pedro Ramirez
+    contact project version 1.0
+    October/2020 */
+          /* section are separated by grid areas */
+          
+          .item-a {
+            grid-area: header;
+            border: 3px solid rgb(243, 120, 4);
+            display: flex;
+            justify-content: center;
+          }
+          
+          h1.title {
+            letter-spacing: 0.5rem;
+            font-size: 4rem;
+            margin: 1rem;
+            font-family: 'Pinyon Script', cursive;
+            color: aqua;
+            text-shadow: 1px 1px 1px black;
+          }
+          
+          .item-b {
+            grid-area: content;
+          }
+          
+          .item-c {
+            grid-area: content;
+            border: 3px solid rgb(243, 120, 4);
+            border-radius: 1em;
+          }
+          
+          section.item-c {
+            width: 100%;
+            height: 543px;
+            overflow: scroll;
+            margin: 0 2rem;
+          }
+          
+          .item-d {
+            width: 80%;
+            border: 3px solid rgb(243, 120, 4);
+            border-radius: 1em;
+            padding: 1rem;
+            height: auto;
+          }
+          
+          .item-d img {
+            width: 100%;
+            height: auto;
+          }
+          
+          .item-e {
+            grid-area: footer;
+            text-align: center;
+            color: rgb(252, 164, 2);
+          }
+          
+          .item-e h6 {
+            font-size: 1rem;
+            font-family: 'Pinyon Script', cursive;
+          }
+          /* class container, enclosing the entire app */
+          
+          .container {
+            width: 75%;
+            margin: auto;
+            margin-top: 2rem;
+            display: grid;
+            /* layout, 3 columns by 3 rows */
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: " header" "content" "footer";
+            grid-gap: 1.5rem;
+            color: black;
+            font-family: 'Libre Baskerville', serif;
+          }
+          
+          .content {
+            display: flex;
+            flex-direction: row;
+          }
+          
+          hr {
+            height: 3px;
+            border-width: 0em;
+            background-color: rgb(243, 120, 4);
+          }
+          /* search section */
+          
+          .search {
+            border: 3px solid rgb(243, 120, 4);
+            border-radius: 1em;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 0.5rem;
+          }
+          
+          #searchBox {
+            margin-right: 0.3rem;
+            margin-right: 0.5rem;
+          }
+          
+          .searchButton {
+            border: solid 1.5px black;
+          }
+          
+          .searchButton:hover {
+            background-color: rgb(56, 218, 174);
+            border: solid 1.5px black
+          }
+          
+          #submitForm {
+            background-color: rgb(219, 87, 39);
+            color: white;
+            width: 7rem;
+            height: 2rem;
+            border: 1px solid black;
+            border-radius: 1em;
+          }
+          
+          #submitForm:hover {
+            background-color: rgb(56, 218, 174);
+            color: black
+          }
+          
+          .formBox {
+            border: 3px solid rgb(243, 120, 4);
+            border-radius: 1em;
+            padding: 2rem;
+            padding-top: 1rem;
+            margin-top: 1rem;
+          }
+          /* styling for new contacts */
+          
+          .newContact {
+            border: 3px solid rgb(243, 120, 4);
+            margin: 1.1rem;
+            border-radius: 1em;
+            padding: 1rem;
+            padding-left: 2rem;
+            padding-top: 1rem;
+          }
+          
+          ul li {
+            margin: 0.5rem;
+          }
+          
+          .newContact:hover {
+            background-color: rgb(56, 218, 174);
+            border: 1px solid black;
+          }
+          
+          button {
+            margin-right: 0.5rem;
+            background-color: white;
+            color: black;
+            width: 4rem;
+            height: 1.5rem;
+            border: 1px solid rgb(223, 37, 37);
+            border-radius: 1em;
+          }
+          
+          button:hover {
+            border: solid 1.5px rgb(56, 218, 174);
+          }
+          /* footer */
+          
+          .myName {
+            font-family: fantasy;
+            color: black;
+            font-size: 0.7rem;
+          }
+          
+          @media(max-width:420px) {
+            .container {
+              width: 100%;
+              margin: auto;
+              margin-top: 1rem;
+              grid-gap: 1rem;
+            }
+            .content {
+              width: auto;
+              display: flex;
+              flex-direction: column;
+            }
+            .searchButton {
+              margin-right: 0;
+            }
+            h1.title {
+              letter-spacing: 0.3rem;
+              font-size: 2.2rem;
+              margin: 0.5rem;
+              font-family: 'Pinyon Script', cursive;
+              color: aqua;
+              text-shadow: 0.5px 0.5px 0.5px black;
+            }
+            .item-d {
+              width: auto;
+            }
+            section.item-c {
+              width: auto;
+              height: auto;
+              margin: 1rem 0;
+            }
+          }
