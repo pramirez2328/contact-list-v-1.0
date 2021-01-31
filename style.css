@@ -3,12 +3,17 @@
 		October/2020
 		section are separated by grid areas */
     
+    body {
+      background-color: rgb(158, 250, 250);
+    }
+    
     .item-a {
       grid-area: header;
       border: 3px solid rgb(243, 120, 4);
       display: flex;
       justify-content: center;
       margin-bottom: 1rem;
+      background-color: white;
     }
     
     h1.title {
@@ -24,15 +29,16 @@
       display: flex;
       flex-direction: column;
       align-content: space-between;
-      height: 34rem;
+      height: 35.5rem;
     }
     
     .item-c {
       border: 3px solid rgb(243, 120, 4);
       border-radius: 1em;
-      height: 34rem;
+      height: 35rem;
       overflow: scroll;
       margin: 0 1rem;
+      background-color: white;
     }
     
     .item-d {
@@ -40,6 +46,7 @@
       border-radius: 1em;
       padding: 1rem;
       height: auto;
+      background-color: white;
     }
     
     .item-d img {
@@ -75,8 +82,10 @@
     }
     
     #app {
+      margin-top: 2rem;
       width: 95%;
       margin: auto;
+      background-color: rgb(158, 250, 250);
     }
     
     .content {
@@ -101,6 +110,7 @@
       padding-left: 0.5rem;
       display: flex;
       justify-content: space-evenly;
+      background-color: white;
     }
     
     #searchBox {
@@ -138,8 +148,8 @@
       border: 3px solid rgb(243, 120, 4);
       border-radius: 1em;
       padding: 2rem;
-      padding-top: 1rem;
-      margin-top: 1rem;
+      margin-top: auto;
+      background-color: white;
     }
     /* styling for new contacts */
     
@@ -151,6 +161,7 @@
       padding-left: 2rem;
       padding-top: 1rem;
       box-shadow: 3px 3px 1px rgb(243, 120, 4);
+      background-color: white;
     }
     
     ul li {
