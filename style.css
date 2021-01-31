@@ -212,7 +212,7 @@
       }
       section.item-c {
         width: auto;
-        height: 0.5fr;
+        height: 27rem;
         margin: 1rem 0;
       }
       #searchBox {
@@ -251,6 +251,7 @@
       }
       section.item-c {
         width: auto;
+        height: 27rem;
         margin: 1rem 0;
       }
     }
