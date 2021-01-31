@@ -8,6 +8,7 @@
       border: 3px solid rgb(243, 120, 4);
       display: flex;
       justify-content: center;
+      margin-bottom: 1rem;
     }
     
     h1.title {
@@ -67,6 +68,11 @@
       grid-gap: 1.5rem;
       color: black;
       font-family: 'Libre Baskerville', serif;
+    }
+    
+    #app {
+      width: 95%;
+      margin: auto;
     }
     
     .content {

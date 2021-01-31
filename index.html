@@ -24,74 +24,74 @@
 <body>
   <!-- class container to enclose the entire content -->
   <div class="container">
+    <div id="app">
+      <!-- header with an image -->
+      <header class="item-a">
+        <h1 class="title">Contact List</h1>
+      </header>
 
-    <!-- header with an image -->
-    <header class="item-a">
-      <h1 class="title">Contact List</h1>
-    </header>
+      <!-- the main section is composed by the search bar and the input form -->
+      <div class="content">
+        <main class="item-b">
+          <div class="search">
 
-    <!-- the main section is composed by the search bar and the input form -->
-    <div class="content">
-      <main class="item-b">
-        <div class="search">
+            <!-- search box -->
+            <input type="text" id="searchBox" value="" placeholder=" Search by Surname">
+            <!-- search button -->
+            <button class="searchButton" id="searchButton">Search</button>
+            <!-- reset button -->
+            <button class="searchButton" id="resetButton">Reset</button>
 
-          <!-- search box -->
-          <input type="text" id="searchBox" value="" placeholder=" Search by Surname">
-          <!-- search button -->
-          <button class="searchButton" id="searchButton">Search</button>
-          <!-- reset button -->
-          <button class="searchButton" id="resetButton">Reset</button>
+          </div>
 
-        </div>
+          <div class="formBox">
+            <p class="label-Title">
+              <h2>New Contact</h2>
+            </p>
+            <hr><br>
+            <form id="form">
 
-        <div class="formBox">
-          <p class="label-Title">
-            <h2>New Contact</h2>
-          </p>
-          <hr><br>
-          <form id="form">
+              <label for="name">First Name:</label><br>
+              <!-- input to collect the name  -->
+              <input type="text" id="fName" value="" placeholder="Name"><br>
 
-            <label for="name">First Name:</label><br>
-            <!-- input to collect the name  -->
-            <input type="text" id="fName" value="" placeholder="Name"><br>
+              <label for="lname">Surname:</label><br>
+              <!-- input to collect the surname  -->
+              <input type="text" id="sName" value="" placeholder="Surname"><br><br>
 
-            <label for="lname">Surname:</label><br>
-            <!-- input to collect the surname  -->
-            <input type="text" id="sName" value="" placeholder="Surname"><br><br>
+              <label for="phone">Phone Number:</label><br>
+              <!-- input to collect the phone number  -->
+              <input type="text" id="pNumber" value="" placeholder="630 878-8440"><br><br>
 
-            <label for="phone">Phone Number:</label><br>
-            <!-- input to collect the phone number  -->
-            <input type="text" id="pNumber" value="" placeholder="630 878-8440"><br><br>
+              <label for="address">Address</label><br>
+              <!-- input to collect the address -->
+              <textarea id="address" name="message" rows="10" cols="30"></textarea>
 
-            <label for="address">Address</label><br>
-            <!-- input to collect the address -->
-            <textarea id="address" name="message" rows="10" cols="30"></textarea>
+              <br><br>
 
-            <br><br>
+              <!-- submit button  -->
+              <input type="button" id="submitForm" value="Submit">
 
-            <!-- submit button  -->
-            <input type="button" id="submitForm" value="Submit">
+            </form>
+          </div>
+        </main>
 
-          </form>
-        </div>
-      </main>
+        <section class="item-c">
+          <!-- this section is to add contacts -->
+        </section>
 
-      <section class="item-c">
-        <!-- this section is to add contacts -->
-      </section>
+        <aside class="item-d">
+          <!-- aside section with an image -->
+          <img id="aside" src="images/photo.jpg" alt="picture">
+        </aside>
 
-      <aside class="item-d">
-        <!-- aside section with an image -->
-        <img id="aside" src="images/photo.jpg" alt="picture">
-      </aside>
+      </div>
 
+      <footer class="item-e">
+        <!-- botton section -->
+        <h6>Proudly created by <span class="myName">Pedro Ramirez</span>&copy 2021</h6>
+      </footer>
     </div>
-
-    <footer class="item-e">
-      <!-- botton section -->
-      <h6>Proudly created by <span class="myName">Pedro Ramirez</span>&copy 2021</h6>
-    </footer>
-
   </div>
 
   <!-- jQuery API -->
