@@ -48,6 +48,7 @@
       grid-area: footer;
       text-align: center;
       color: rgb(252, 164, 2);
+      margin-top: 1rem;
     }
     
     .item-e h6 {
@@ -209,7 +210,7 @@
     @media(max-width:420px) {
       .container {
         width: 100%;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
         grid-gap: 1rem;
       }
       .content {
@@ -236,7 +237,6 @@
       }
       section.item-c {
         width: auto;
-        height: 0.5fr;
         margin: 1rem 0;
       }
     }
