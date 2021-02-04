@@ -77,7 +77,6 @@
       grid-template-rows: auto auto 5%;
       grid-template-areas: " header" "content" "footer";
       grid-gap: 1.5rem;
-      color: black;
       font-family: 'Libre Baskerville', serif;
     }
     
